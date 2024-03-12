@@ -5,8 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Burnout</title>
-    <!-- Style -->
     <link rel="stylesheet" href="style.css" />
+<<<<<<< HEAD
+=======
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+>>>>>>> a522380b6ff665d36091289b16a99a27eb9cc0b9
 </head>
 
 <body>
@@ -65,18 +70,15 @@
             <div class="contact-items">
                 <div class="contact-item">
                     <img src="./images//icons/map.png" alt="" />
-                    <!-- <i class="fa-solid fa-map"></i> -->
                     <p>Hertogswetering 173, 3543 AS Utrecht</p>
                 </div>
 
                 <div class="contact-item">
-                    <!-- <i class="fa-solid fa-envelope"></i> -->
                     <img src="./images//icons/mail.png" alt="" />
                     <p>burnoutpechvoorjou@gmail.com</p>
                 </div>
 
                 <div class="contact-item">
-                    <!-- <i class="fa-solid fa-phone"></i> -->
                     <img src="./images//icons/phone.png" alt="" />
                     <p>06 39 14 20 05</p>
                 </div>
@@ -93,7 +95,6 @@
 
     <?php require './includes/footer.php' ?>
 
-    <!-- Script -->
     <script src="plugin/AutoTyping.js"></script>
     <script src="script.js"></script>
 </body>
