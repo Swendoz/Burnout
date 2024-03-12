@@ -49,7 +49,7 @@ $to = $_POST['to'];
 $html = $_POST['html'];
 
 if (sendMail($to, 'Burnout Uitslag - Burnout Pech Voor Jou', $html)) {
-  echo 'E-posta başarıyla gönderildi.';
+  // echo 'E-posta başarıyla gönderildi.';
 } else {
   echo 'E-posta gönderirken bir hata oluştu.';
 }

@@ -20,7 +20,7 @@
                 <a href="#">Burnout</a>
             </div>
             <ul>
-                <li><a class="active" href="index.php">Home</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="/pages/informatie.html">Informatie</a></li>
                 <li><a href="/pages/vragenlijst.html">Vragenlijst</a></li>
             </ul>
@@ -130,6 +130,7 @@
 
     <!-- Script -->
     <script src="plugin/AutoTyping.js"></script>
+    <script src="./scripts/navbar.js"></script>
     <script src="script.js"></script>
 </body>
 
