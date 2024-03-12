@@ -63,9 +63,11 @@
 
                 <div class="text-box right">
                     <p>
-        Een burn-out ontstaat door langdurige stress en overbelasting, waarbij zowel fysieke als mentale energiereserves uitgeput raken. 
-        Werkgerelateerde spanningen, zoals hoge werkdruk, conflicten op de werkvloer, of een gebrek aan controle over het werk, spelen vaak een grote rol bij het ontwikkelen van een burn-out. 
-        Dit kan leiden tot symptomen zoals extreme vermoeidheid, cynisme en verminderde prestaties.
+                        Een burn-out ontstaat door langdurige stress en overbelasting, waarbij zowel fysieke als mentale
+                        energiereserves uitgeput raken.
+                        Werkgerelateerde spanningen, zoals hoge werkdruk, conflicten op de werkvloer, of een gebrek aan
+                        controle over het werk, spelen vaak een grote rol bij het ontwikkelen van een burn-out.
+                        Dit kan leiden tot symptomen zoals extreme vermoeidheid, cynisme en verminderde prestaties.
                     </p>
                 </div>
             </div>
