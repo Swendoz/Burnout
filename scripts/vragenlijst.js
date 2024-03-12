@@ -161,8 +161,9 @@ sendButton.addEventListener('click', function ()
     uitslag.classList.add('active');
 
     // Scroll to form overzicht
+    const newUitslag = document.querySelector('#uitslag');
     window.scrollTo({
-        top: uitslag.offsetTop - 50,
+        top: newUitslag.offsetTop - 50,
         behavior: 'smooth'
     });
 });
@@ -187,8 +188,9 @@ const SendError = (message) =>
 {
     timeout && clearTimeout(timeout);
 
+    const newErrorEl = document.querySelector('.error');
     window.scrollTo({
-        top: errorEl.offsetTop - 100,
+        top: newErrorEl.offsetTop - 100,
         behavior: 'smooth'
     });
 
@@ -317,10 +319,11 @@ function sendEmail(toEmail, html)
     {
         if (xhr.status == 200)
         {
-            alert(xhr.responseText);
+            console.log(xhr.responseText);
+            // alert(xhr.responseText);
         } else
         {
-            alert("Mail gönderilirken bir hata oluştu.");
+            alert("An error occurred while sending mail. Please try again later.");
         }
     };
 
