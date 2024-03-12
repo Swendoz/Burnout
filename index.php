@@ -63,14 +63,9 @@
 
                 <div class="text-box right">
                     <p>
-                        Een burn-out is het gevolg van een langdurige periode van stress
-                        en overspanning. Langdurige stress en spanning zorgt ervoor dat je
-                        fysieke en mentale energiereserves als het ware “opgebrand” raken.
-                        Problemen op je werk die veel spanning veroorzaken kunnen hier
-                        bijvoorbeeld aanleiding voor geven. Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Eveniet explicabo dignissimos
-                        reiciendis ipsa quod quos maxime est iste ad quaerat, nisi, fuga
-                        voluptate dolor illum nam facere velit fugiat eos!
+        Een burn-out ontstaat door langdurige stress en overbelasting, waarbij zowel fysieke als mentale energiereserves uitgeput raken. 
+        Werkgerelateerde spanningen, zoals hoge werkdruk, conflicten op de werkvloer, of een gebrek aan controle over het werk, spelen vaak een grote rol bij het ontwikkelen van een burn-out. 
+        Dit kan leiden tot symptomen zoals extreme vermoeidheid, cynisme en verminderde prestaties.
                     </p>
                 </div>
             </div>
