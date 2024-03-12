@@ -7,40 +7,10 @@
     <title>Burnout</title>
     <!-- Style -->
     <link rel="stylesheet" href="style.css" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <nav>
-        <div class="nav-box">
-            <div class="logo">
-                <a href="#">Burnout</a>
-            </div>
-            <ul>
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="/pages/informatie.html">Informatie</a></li>
-                <li><a href="/pages/vragenlijst.html">Vragenlijst</a></li>
-            </ul>
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        </div>
-
-        <div class="nav-mobile">
-            <ul>
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="/pages/informatie.html">Informatie</a></li>
-                <li><a href="/pages/vragenlijst.html">Vragenlijst</a></li>
-
-                <li><button class="close-mobile">X</button></li>
-            </ul>
-        </div>
-    </nav>
+    <?php require './includes/navbar.php' ?>
 
     <main>
         <img src="./images/main.jpg" alt="Main" />
@@ -121,13 +91,10 @@
         </div>
     </section>
 
-    <footer>
-        <p>All rights reserved &copy; 2024 Burnout</p>
-    </footer>
+    <?php require './includes/footer.php' ?>
 
     <!-- Script -->
     <script src="plugin/AutoTyping.js"></script>
-    <script src="./scripts/navbar.js"></script>
     <script src="script.js"></script>
 </body>
 

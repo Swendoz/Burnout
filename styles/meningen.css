@@ -1,0 +1,227 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#meningen-main {
+	width: var(--width);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3rem;
+	padding: 2rem 0;
+}
+
+#meningen-main h1 {
+	font-size: 3rem;
+}
+
+#meningen-main .meningen-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#meningen-main .meningen-box p {
+	padding: 0 2rem;
+	font-size: 1.8rem;
+	max-width: 50%;
+}
+
+#meningen-main .meningen-box img {
+	height: 300px;
+	border-radius: 50px;
+	object-fit: contain;
+	box-shadow: 0px 0px 30px -5px rgba(0, 0, 0, 0.5);
+}
+
+/* Posts */
+#meningen-posts {
+	padding: 2rem 0;
+	width: var(--width);
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+#meningen-posts .post {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 2rem;
+	border: 1px solid #000;
+	border-radius: 15px;
+	box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.5);
+}
+
+#meningen-posts .post .top-bar {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#meningen-posts .post .top-bar .username {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+#meningen-posts .post .top-bar .date {
+	font-size: 1rem;
+	font-weight: 400;
+	font-style: italic;
+}
+#meningen-posts .post .message {
+	font-size: 1.1rem;
+	word-break: break-word;
+	font-weight: 400;
+}
+
+/* Button */
+.mening-button {
+	padding: 1rem 2rem;
+	font-size: 1.5rem;
+	font-weight: 600;
+	border: none;
+	border-radius: 15px;
+	background-color: var(--primary-color);
+	color: #fff;
+	cursor: pointer;
+	transition: 0.3s;
+	margin: 0 auto;
+}
+
+.mening-button.bottom {
+	margin-bottom: 2rem;
+}
+
+.mening-button:hover {
+	background-color: var(--primary-hover-color);
+}
+
+/* NEW MENING PAGE */
+
+#meningen-form {
+	padding: 2rem 0;
+	width: var(--width);
+}
+
+#meningen-form form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 4rem;
+}
+
+#meningen-form form .form-group {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 1rem;
+}
+
+#meningen-form form .form-group label {
+	font-size: 1.8rem;
+}
+
+#meningen-form form .form-group textarea {
+	resize: vertical;
+	height: auto;
+	min-height: 200px;
+}
+
+#meningen-form form .form-group input[type="text"],
+#meningen-form form .form-group input[type="email"],
+#meningen-form form .form-group input[type="number"],
+#meningen-form form .form-group textarea {
+	border: none;
+	outline: none;
+	width: 100%;
+	border-radius: 15px;
+	padding: 1rem 1rem;
+	font-size: 1.5rem;
+	background-color: var(--background-secondary-color);
+	border: 1px solid #000;
+	box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.5);
+}
+
+#meningen-form form .form-group input[type="text"]::placeholder,
+#meningen-form form .form-group input[type="email"]::placeholder,
+#meningen-form form .form-group input[type="number"]::placeholder,
+#meningen-form form .form-group textarea::placeholder {
+	opacity: 0.5;
+}
+
+#meningen-form button {
+	width: 50%;
+	padding: 1rem 2rem;
+	border-radius: var(--border-radius);
+	background-color: rgb(19, 168, 19);
+	color: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 2rem;
+	transition: all 0.3s ease;
+}
+
+#meningen-form button:hover {
+	background-color: rgb(0, 128, 0);
+}
+
+/* Error */
+#meningen-form .error {
+	display: none;
+	width: 50%;
+	padding: 1rem 2rem;
+	border-radius: var(--border-radius);
+	background-color: #e61c1c;
+	color: #fff;
+	font-size: 1.8rem;
+	transition: all 0.3s ease;
+	margin: 2rem 0;
+	text-align: center;
+}
+
+#meningen-form .error.active {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media only screen and (max-width: 992px) {
+	#meningen-main .meningen-box {
+		flex-direction: column-reverse;
+		text-align: center;
+		gap: 2rem;
+	}
+
+	#meningen-main {
+		width: 100%;
+	}
+
+	#meningen-form {
+		width: 100%;
+	}
+
+	#meningen-main .meningen-box p {
+		max-width: 90%;
+	}
+
+	#meningen-main a {
+		display: none;
+	}
+
+	#meningen-form form .form-group {
+		width: 80%;
+	}
+}

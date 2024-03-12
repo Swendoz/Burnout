@@ -5,7 +5,6 @@ use PHPMailer\PHPMailer\Exception;
 
 require '../vendor/autoload.php';
 
-// Mail gönderme fonksiyonu
 function sendMail($to, $subject, $html)
 {
   $mail = new PHPMailer(true);
@@ -20,7 +19,7 @@ function sendMail($to, $subject, $html)
     $mail->SMTPSecure = 'tsl';
     $mail->Port = 587;
 
-    $mail->setFrom('burnoutpechvoorjou@gmail.com', 'Burnout Pech voor Jou'); // Gönderici ismini ve adresini buraya girin
+    $mail->setFrom('burnoutpechvoorjou@gmail.com', 'Burnout Pech voor Jou');
 
     $mail->addAddress($to);
 
@@ -36,7 +35,7 @@ function sendMail($to, $subject, $html)
   }
 
 
-  return $result; // Değişkeni döndür
+  return $result;
 }
 
 $to = $_POST['to'];

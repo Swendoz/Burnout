@@ -1,3 +1,4 @@
+// Get data from results.json
 let results;
 
 fetch('../results.json')
@@ -13,6 +14,7 @@ fetch('../results.json')
         console.error('Hata:', error);
     });
 
+// Send button click event
 const sendButton = document.querySelector('.send-button');
 
 sendButton.addEventListener('click', function ()
@@ -160,14 +162,16 @@ sendButton.addEventListener('click', function ()
 
     uitslag.classList.add('active');
 
-    // Scroll to form overzicht
-    const newUitslag = document.querySelector('#uitslag');
+    const scrollUitslag = document.querySelector('#uitslag');
     window.scrollTo({
-        top: newUitslag.offsetTop - 50,
+        top: scrollUitslag.offsetTop - 50,
         behavior: 'smooth'
     });
+
+    saveData(userEmail, userName, procentScore);
 });
 
+// Input radio change event
 const inputRadios = document.querySelectorAll('input[type="radio"]');
 
 inputRadios.forEach((input) =>
@@ -181,6 +185,7 @@ inputRadios.forEach((input) =>
     });
 });
 
+// Error message
 const errorEl = document.querySelector('.error');
 let timeout;
 
@@ -203,6 +208,7 @@ const SendError = (message) =>
     }, 3000);
 }
 
+// Create question
 const CreateQuestion = (questionText, inputText) =>
 {
     const question = document.createElement('div');
@@ -221,6 +227,7 @@ const CreateQuestion = (questionText, inputText) =>
     return question;
 }
 
+// Send mail button click event
 document.querySelector(".send-mail").addEventListener('click', () =>
 {
     const userEmail = document.querySelector('input[name="email"]').value;
@@ -324,6 +331,29 @@ function sendEmail(toEmail, html)
         } else
         {
             alert("An error occurred while sending mail. Please try again later.");
+        }
+    };
+
+    xhr.send(params);
+}
+
+function saveData(mail, name, score)
+{
+    var xhr = new XMLHttpRequest();
+    var url = "/scripts/saveData.php";
+    var params = "mail=" + encodeURIComponent(mail) + "&name=" + encodeURIComponent(name) + "&score=" + encodeURIComponent(score);
+
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+    xhr.onload = function ()
+    {
+        if (xhr.status == 200)
+        {
+            console.log(xhr.responseText);
+        } else
+        {
+            alert("An error occurred while saving data. Please try again later.");
         }
     };
 
