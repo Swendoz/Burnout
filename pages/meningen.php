@@ -21,11 +21,11 @@
 
         <div class="meningen-box">
             <p>
-                Hieronder kunt u uw mening geven over de website. Wij zouden het
-                zeer op prijs stellen als u uw mening zou willen geven. Uw feedback is
-                belangrijk voor ons om de website te verbeteren en om ervoor te zorgen
-                dat we aan uw behoeften voldoen. We waarderen uw tijd en inspanning om
-                ons te helpen beter te worden. Dank u wel.
+
+                Hieronder kunt u uw mening geven of de mening van anderen lezen. Mensen kunnen hier hun eigen
+                ervaringen, meningen of ideeën delen. Kom op, bereid u voor om uw verhaal te delen en ga samen
+                verder op
+                weg naar herstel!
             </p>
 
             <img src="../images/mening.jpg" alt="Mening" class="right" />
@@ -50,12 +50,17 @@
 
         // Loop through all posts
         while ($row = mysqli_fetch_assoc($result)) {
+            // $message = $row['message'];
+
+            // Replace <br> tags with new lines
+            // $message = str_replace("<br>", "\n", $message);
+
             echo '<div class="post">';
             echo '<div class="top-bar">';
             echo '<div class="username">' . $row['name'] . '</div>';
             echo '<div class="date">' . $row['date'] . '</div>';
             echo '</div>';
-            echo '<div class="message">' . $row['message'] . '</div>';
+            echo '<div class="message">' . nl2br($row['message']) . '</div>';
             echo '</div>';
         }
 
@@ -94,7 +99,12 @@
         </div> -->
     </div>
 
-    <a href="./newMening.php#meningen-form" class="mening-button bottom" id="mening-button">Deel uw mening</a>
+    <a href="./newMening.php#meningen-form" class="mening-button" id="mening-button">Deel uw mening</a>
+
+    <p class="details">
+        Wat u heeft geschreven kan worden beoordeeld door de autoriteiten of verwijderd worden. Gelieve
+        respectvol te zijn bij het delen van berichten.
+    </p>
 
     <?php require '../includes/footer.php' ?>
 

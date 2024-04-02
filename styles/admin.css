@@ -1,0 +1,204 @@
+.admin-main {
+	width: var(--width);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3rem;
+	padding: 2rem 0;
+}
+
+.admin-main h1 {
+	font-size: 3rem;
+	text-align: center;
+}
+
+.admin-main .admin-box {
+	width: 100%;
+}
+
+/* Admin */
+#admin-main {
+}
+
+#admin-main .button-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+#admin-main .button-box button {
+	border: none;
+	outline: none;
+	font-size: 1.2rem;
+	padding: 1rem 2rem;
+	border-radius: 25px;
+	background-color: var(--primary-color);
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	opacity: 0.8;
+}
+
+#admin-main .button-box button:hover {
+	background-color: var(--primary-hover-color);
+}
+
+#admin-main .button-box button.active {
+	opacity: 1;
+	background-color: rgb(27, 81, 197);
+}
+
+#admin-main .admin-panel {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	margin: 2rem 0;
+}
+
+#admin-main .admin-panel.active {
+	display: flex;
+}
+
+#admin-main table input {
+	border: none;
+	padding: 1rem 0.8rem;
+	border-radius: 15px;
+	font-size: 1rem;
+	cursor: pointer;
+	background-color: #555555;
+	color: #fff;
+}
+
+#admin-main table input:hover {
+	background-color: #333333;
+}
+
+#admin-main table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#admin-main table th {
+	background-color: var(--primary-color);
+	color: #fff;
+	padding: 1rem;
+}
+
+#admin-main table td {
+	padding: 1rem;
+	text-align: center;
+	min-width: 100px;
+}
+
+#admin-main table td.left {
+	text-align: left;
+}
+
+#admin-main table tr:nth-child(even) {
+	background-color: #ececec;
+}
+
+#admin-main table tr:hover {
+	background-color: #ddd;
+}
+
+#admin-main table a {
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
+#admin-main form {
+	/* margin: 2rem 0; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#admin-main #logout {
+	border: none;
+	outline: none;
+	font-size: 0.9rem;
+	padding: 0.5rem 1rem;
+	border-radius: 25px;
+	background-color: rgb(177, 71, 29);
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+#admin-main #logout:hover {
+	background-color: rgb(151, 23, 23);
+}
+
+/* Login */
+#adminlogin-main h1 {
+	margin-bottom: 3rem;
+}
+
+#adminlogin-main .login-box {
+	width: 500px;
+	padding: 2rem 4rem;
+	/* background-color: rgba(31, 31, 31, 0.5); */
+	border-radius: 25px;
+	/* color: whitesmoke; */
+	border: 1px solid #000;
+	box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+#adminlogin-main .login-box form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+}
+
+#adminlogin-main .login-box form .error {
+	padding: 1rem 2rem;
+	border-radius: 25px;
+	background-color: rgb(214, 31, 31);
+	color: #fff;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+#adminlogin-main .login-box form .input-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	width: 100%;
+}
+
+#adminlogin-main .login-box form .input-box label {
+	width: 100%;
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+#adminlogin-main .login-box form .input-box input {
+	width: 100%;
+	border: none;
+	padding: 1rem 1rem;
+	border-radius: 15px;
+	font-size: 1.3rem;
+	box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+#adminlogin-main .login-box form button {
+	border: none;
+	outline: none;
+	font-size: 1.2rem;
+	padding: 1rem 2rem;
+	border-radius: 25px;
+	background-color: rgb(29, 177, 29);
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+#adminlogin-main .login-box form button:hover {
+	background-color: rgb(23, 151, 23);
+}

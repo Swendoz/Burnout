@@ -4,6 +4,7 @@ body {
 	justify-content: center;
 	align-items: center;
 }
+
 #meningen-main {
 	width: var(--width);
 	display: flex;
@@ -27,6 +28,12 @@ body {
 	padding: 0 2rem;
 	font-size: 1.8rem;
 	max-width: 50%;
+}
+
+.details {
+	font-size: 1rem;
+	opacity: 0.5;
+	margin: 1rem 0;
 }
 
 #meningen-main .meningen-box img {
