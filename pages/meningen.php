@@ -21,7 +21,6 @@
 
         <div class="meningen-box">
             <p>
-
                 Hieronder kunt u uw mening geven of de mening van anderen lezen. Mensen kunnen hier hun eigen
                 ervaringen, meningen of ideeën delen. Kom op, bereid u voor om uw verhaal te delen en ga samen
                 verder op
@@ -36,11 +35,8 @@
 
     <div id="meningen-posts">
         <?php
-
-        // Connect to database
         require '../database/db_conn.php';
 
-        // Get all posts from database
         $sql = "SELECT * FROM posts ORDER BY date desc";
         $result = mysqli_query($conn, $sql);
 
@@ -48,13 +44,7 @@
             echo '<div class="no-posts">Er zijn nog geen meningen geplaatst.</div>';
         }
 
-        // Loop through all posts
         while ($row = mysqli_fetch_assoc($result)) {
-            // $message = $row['message'];
-
-            // Replace <br> tags with new lines
-            // $message = str_replace("<br>", "\n", $message);
-
             echo '<div class="post">';
             echo '<div class="top-bar">';
             echo '<div class="username">' . $row['name'] . '</div>';
@@ -64,28 +54,10 @@
             echo '</div>';
         }
 
-        // Close connection
         mysqli_close($conn);
 
         ?>
-        <!-- <div class="post">
-            <div class="top-bar">
-                <div class="username">User Name</div>
-                <div class="date">Date</div>
-            </div>
-            <div class="message">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ea obcaecati possimus nemo commodi,
-                modi, maiores quasi in corrupti hic impedit suscipit quis blanditiis debitis magnam laborum. Magni, unde
-                sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ea obcaecati possimus nemo
-                commodi,
-                modi, maiores quasi in corrupti hic impedit suscipit quis blanditiis debitis magnam laborum. Magni, unde
-                sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ea obcaecati possimus nemo
-                commodi,
-                modi, maiores quasi in corrupti hic impedit suscipit quis blanditiis debitis magnam laborum. Magni, unde
-                sunt?
-            </div>
-        </div>
-
+        <!-- <
         <div class="post">
             <div class="top-bar">
                 <div class="username">User Name</div>

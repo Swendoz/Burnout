@@ -196,7 +196,6 @@ nav .nav-mobile ul li .close-mobile {
 }
 
 /* Home */
-
 main {
 	width: var(--width);
 	min-height: 90vh;
@@ -233,9 +232,6 @@ main .text-box #burnout-desc span {
 }
 
 /* Information */
-
-#informatie {
-}
 
 #informatie h2 {
 	font-size: 3rem;
@@ -333,18 +329,6 @@ footer {
 	padding: 20px 0;
 	font-size: 1.3rem;
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {} */
-
-/* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {...} */
-
-/* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {...} */
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {...} */
 
 @media only screen and (max-width: 1700px) {
 	#contact .contact-box {

@@ -6,9 +6,7 @@ if (isset($_SESSION['user'])) {
     header('Location: ./admin.php');
 }
 
-// Connect to database
 require '../database/db_conn.php';
-
 ?>
 
 <!DOCTYPE html>
@@ -48,7 +46,6 @@ require '../database/db_conn.php';
                 }
 
                 if (isset($_GET["error"])) {
-                    // echo $_GET['error'];
                     $errorText = $_GET['error'];
                     echo "<div class='error'> $errorText </div>";
                 }

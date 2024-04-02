@@ -38,24 +38,23 @@
 
 <script src="../scripts/navbar.js"></script>
 <script>
-    const currentUrl = window.location.href;
-    const currentPage = currentUrl.split("/").pop().split(".")[0];
+const currentUrl = window.location.href;
+const currentPage = currentUrl.split("/").pop().split(".")[0];
 
-    const navList = document.querySelector(".nav-list");
-    const allNavItems = navList.querySelectorAll("li");
+const navList = document.querySelector(".nav-list");
+const allNavItems = navList.querySelectorAll("li");
 
-    allNavItems.forEach((item) => {
-        const link = item.querySelector("a");
-        const linkHref = link.getAttribute("href").split("/").pop().split(".")[0];
+allNavItems.forEach((item) => {
+    const link = item.querySelector("a");
+    const linkHref = link.getAttribute("href").split("/").pop().split(".")[0];
 
-        if (linkHref === currentPage) {
-            link.classList.add("active");
-        }
-    });
-
-
-    // If teher is no href page, add active class to home
-    if (currentPage === "") {
-        allNavItems[0].querySelector("a").classList.add("active");
+    if (linkHref === currentPage) {
+        link.classList.add("active");
     }
+});
+
+
+if (currentPage === "") {
+    allNavItems[0].querySelector("a").classList.add("active");
+}
 </script>

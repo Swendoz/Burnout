@@ -15,13 +15,11 @@
 
     <?php
 
-    // Connect to database
     require '../database/db_conn.php';
 
     if (isset($_POST['submit'])) {
         $name = $_POST['name'];
         $message = $_POST['message'];
-        // $message = str_replace("\n", "<br>", $message);
 
         $name = mysqli_real_escape_string($conn, $name);
         $message = mysqli_real_escape_string($conn, $message);

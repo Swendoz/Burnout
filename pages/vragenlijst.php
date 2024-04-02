@@ -59,7 +59,7 @@
                     </div>
 
                     <div class="answer">
-                        <input type="radio" id="qu1an3" name="qu1" value="1" />
+                        <input type="radio" id="qu1an3" name="qu1" value="0" />
                         <label for="qu1an3">Ik kan mijn werkdruk onder controle houden.</label>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                     </div>
 
                     <div class="answer">
-                        <input type="radio" id="qu2an3" name="qu2" value="1" />
+                        <input type="radio" id="qu2an3" name="qu2" value="0" />
                         <label for="qu2an3">Ik kan problemen effectief oplossen.</label>
                     </div>
                 </div>
@@ -101,7 +101,7 @@
                     </div>
 
                     <div class="answer">
-                        <input type="radio" id="qu3an3" name="qu3" value="1" />
+                        <input type="radio" id="qu3an3" name="qu3" value="0" />
                         <label for="qu3an3">Ik werk goed samen met mijn collega's.</label>
                     </div>
                 </div>
@@ -123,7 +123,7 @@
                     </div>
 
                     <div class="answer">
-                        <input type="radio" id="qu4an3" name="qu4" value="1" />
+                        <input type="radio" id="qu4an3" name="qu4" value="0" />
                         <label for="qu4an3">Ik ben gemotiveerd en ga graag naar mijn werk.</label>
                     </div>
                 </div>
@@ -146,7 +146,7 @@
                     </div>
 
                     <div class="answer">
-                        <input type="radio" id="qu5an3" name="qu5" value="1" />
+                        <input type="radio" id="qu5an3" name="qu5" value="0" />
                         <label for="qu5an3">Mijn stressniveau is laag en ik kan er goed mee omgaan.</label>
                     </div>
                 </div>
@@ -167,7 +167,7 @@
                     </div>
 
                     <div class="answer">
-                        <input type="radio" id="qu6an3" name="qu6" value="1" />
+                        <input type="radio" id="qu6an3" name="qu6" value="0" />
                         <label for="qu6an3">Ik kan ondersteuning krijgen wanneer ik het nodig heb.</label>
                     </div>
                 </div>
@@ -189,7 +189,7 @@
                     </div>
 
                     <div class="answer">
-                        <input type="radio" id="qu7an3" name="qu7" value="1" />
+                        <input type="radio" id="qu7an3" name="qu7" value="0" />
                         <label for="qu7an3">Ik kan een gezonde balans vinden tussen werk en
                             priveleven.</label>
                     </div>

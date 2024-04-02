@@ -35,7 +35,7 @@
     </section>
 
     <section id="common-signs">
-        <img src="../images/commonsigns.png" alt="" />
+        <img src="../images/burnout-klacten.png" alt="" />
     </section>
 
     <section id="burnout-work">

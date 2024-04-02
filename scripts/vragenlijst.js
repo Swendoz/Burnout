@@ -250,7 +250,6 @@ document.querySelector(".send-mail").addEventListener('click', () =>
 			}
 
 			.container {
-				height: 100%;
 				max-width: 600px;
 				margin: 0 auto;
 				background-color: #fff;
@@ -279,7 +278,9 @@ document.querySelector(".send-mail").addEventListener('click', () =>
 
             .form-overzicht {
                 width: 100%;
-                display: flex;
+                display:-webkit-flex;
+                display:-ms-flexbox;
+                display:flex;
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 1rem;
@@ -287,7 +288,9 @@ document.querySelector(".send-mail").addEventListener('click', () =>
 
             .form-overzicht .question {
                 width: 100%;
-                display: flex;
+                display:-webkit-flex;
+                display:-ms-flexbox;
+                display:flex;
                 flex-direction: column;
                 gap: 1rem;
                 font-size: 1.2rem;

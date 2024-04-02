@@ -6,7 +6,6 @@ if (!isset($_SESSION['user'])) {
     header('Location: ./admin_login.php');
 }
 
-// Connect to database
 require '../database/db_conn.php';
 
 ?>
@@ -46,23 +45,22 @@ require '../database/db_conn.php';
 
             <div class="button-box">
                 <button id="post-button" <?php if ($isPostActive) { ?> class="active" <?php } ?>>Meningen</button>
-                <button id="survey-button" <?php if ($isSurveyActive) { ?> class="active"
-                    <?php } ?>>Vragenlijst</button>
+                <button id="survey-button" <?php if ($isSurveyActive) { ?> class="active" <?php } ?>>Vragenlijst</button>
             </div>
 
             <?php
             if ($isPostActive) {
             ?>
-            <div class="post-box admin-panel active">
-                <table>
-                    <tr>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Message</th>
-                        <th>Date</th>
-                        <th></th>
-                    </tr>
-                    <?php
+                <div class="post-box admin-panel active">
+                    <table>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Message</th>
+                            <th>Date</th>
+                            <th></th>
+                        </tr>
+                        <?php
                         $sql = "SELECT * FROM posts ORDER BY date desc";
                         $result = mysqli_query($conn, $sql);
 
@@ -84,8 +82,8 @@ require '../database/db_conn.php';
                             }
                         }
                         ?>
-                </table>
-            </div>
+                    </table>
+                </div>
             <?php
             }
             ?>
@@ -93,15 +91,15 @@ require '../database/db_conn.php';
             <?php
             if ($isSurveyActive) {
             ?>
-            <div class="survey-box admin-panel active">
-                <table>
-                    <tr>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Mail</th>
-                        <th>Score</th>
-                    </tr>
-                    <?php
+                <div class="survey-box admin-panel active">
+                    <table>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Mail</th>
+                            <th>Score</th>
+                        </tr>
+                        <?php
                         $sql = "SELECT * FROM survey ORDER BY id desc";
                         $result = mysqli_query($conn, $sql);
 
@@ -116,8 +114,8 @@ require '../database/db_conn.php';
                             }
                         }
                         ?>
-                </table>
-            </div>
+                    </table>
+                </div>
             <?php
             }
             ?>
@@ -136,20 +134,20 @@ require '../database/db_conn.php';
     <?php require '../includes/footer.php' ?>
 
     <script>
-    if (window.location.href.indexOf("active") == -1) {
-        window.location.href = "admin.php?active=post";
-    }
+        if (window.location.href.indexOf("active") == -1) {
+            window.location.href = "admin.php?active=post";
+        }
 
-    const postButton = document.getElementById("post-button");
-    const surveyButton = document.getElementById("survey-button");
+        const postButton = document.getElementById("post-button");
+        const surveyButton = document.getElementById("survey-button");
 
-    postButton.addEventListener("click", () => {
-        window.location.href = "admin.php?active=post";
-    });
+        postButton.addEventListener("click", () => {
+            window.location.href = "admin.php?active=post";
+        });
 
-    surveyButton.addEventListener("click", () => {
-        window.location.href = "admin.php?active=survey";
-    });
+        surveyButton.addEventListener("click", () => {
+            window.location.href = "admin.php?active=survey";
+        });
     </script>
 </body>
 
