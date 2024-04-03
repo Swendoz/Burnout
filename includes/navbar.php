@@ -53,6 +53,18 @@ allNavItems.forEach((item) => {
     }
 });
 
+const navListMobile = document.querySelector(".nav-mobile");
+const allNavItemsMobile = navListMobile.querySelectorAll("li");
+
+allNavItemsMobile.forEach((item) => {
+    const link = item.querySelector("a");
+    const linkHref = link.getAttribute("href").split("/").pop().split(".")[0];
+
+    if (linkHref === currentPage) {
+        link.classList.add("active");
+    }
+});
+
 
 if (currentPage === "") {
     allNavItems[0].querySelector("a").classList.add("active");
